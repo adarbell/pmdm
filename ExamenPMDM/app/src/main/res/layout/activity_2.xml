@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/pruebas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textColor="#FFAAF1"
+            android:textStyle="bold"
+            android:text="ALQUILER\nMEDIOS MOVIDIDAD" />
+        <ImageView
+            android:id="@+id/imagenTitulo"
+            android:layout_marginTop="15dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/movilidad" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:alignmentMode="alignBounds"
+        android:columnCount="3"
+        android:paddingHorizontal="10dp"
+        android:rowCount="1">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <RadioGroup
+            android:layout_width="165dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/btn_seguro1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Sin seguro" />
+
+            <RadioButton
+                android:id="@+id/btn_seguro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguro COMPLETO" />
+
+        </RadioGroup>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:alignmentMode="alignBounds"
+        android:columnCount="3"
+        android:paddingHorizontal="10dp"
+        android:rowCount="1">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Casco/Guantes" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="Incluye GPS" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="Más Extras" />
+
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/editText_nDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_totprecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL PRECIO" />
+
+        <TextView
+            android:id="@+id/text_precioTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/btn_factura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FACTURA" />
+
+
+</LinearLayout>
