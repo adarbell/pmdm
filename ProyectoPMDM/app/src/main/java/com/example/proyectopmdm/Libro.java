@@ -6,15 +6,16 @@ public class Libro  implements Serializable {
     private int id;
     private String titulo;
     private String autor;
-    private int paginas;
     private int img;
+    private int user_id;
 
-    public Libro(int id, String titulo, String autor, int paginas, int img) {
+    public Libro(int id, String titulo, String autor, int img, int user_id) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.paginas = paginas;
         this.img = img;
+        this.user_id = user_id;
+
     }
     public int getId() { return id; }
 
@@ -36,14 +37,6 @@ public class Libro  implements Serializable {
         this.autor = autor;
     }
 
-    public int getPaginas() {
-        return paginas;
-    }
-
-    public void setPaginas(int paginas) {
-        this.paginas = paginas;
-    }
-
     public int getImg() {
         return img;
     }
@@ -52,14 +45,24 @@ public class Libro  implements Serializable {
         this.img = img;
     }
 
+    public int getUserId() {
+        return user_id;
+    }
+
+    public void serUserId(int user_id) {
+        this.user_id = user_id;
+    }
+
+
+
     @Override
     public String toString() {
         return "Libro{" +
                 "id='" + id + '\'' +
                 ", titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
-                ", paginas='" + paginas + '\'' +
-                ", img=" + img +
+                ", img='" + img + '\'' +
+                ", user_id=" + user_id +
                 '}';
     }
 }

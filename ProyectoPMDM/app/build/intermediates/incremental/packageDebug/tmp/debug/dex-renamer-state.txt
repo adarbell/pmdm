@@ -1,4 +1,4 @@
-#Fri Jan 31 12:04:59 CET 2020
+#Wed Feb 05 10:24:07 CET 2020
 base.0=/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

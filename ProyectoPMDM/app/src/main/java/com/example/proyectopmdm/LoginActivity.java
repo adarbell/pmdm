@@ -18,8 +18,8 @@ public class LoginActivity extends AppCompatActivity {
         EditText userEditText = findViewById(R.id.userEditText);
         EditText pwdEditText = findViewById(R.id.pwdEditText);
 
+        //Login
         btnLogin.setOnClickListener(v -> {
-            //Login
             //Login simulado
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
