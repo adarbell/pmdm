@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LibroActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/stringEligeCatalogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Elige un catalogo"
+            android:textColor="#553FB5"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="10dp"
+        android:columnCount="3"
+        android:rowCount="1">
+
+
+        <ImageView
+            android:id="@+id/img_libro"
+            android:layout_row="0"
+            android:layout_column="0"
+
+            android:paddingHorizontal="5dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/book"/>
+        <ImageView
+            android:id="@+id/img_pelicula"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:paddingHorizontal="5dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/tv"/>
+        <ImageView
+            android:id="@+id/img_juego"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:paddingHorizontal="5dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/game"/>
+
+    </GridLayout>
+
+</LinearLayout>

@@ -11,7 +11,7 @@
 9-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:5:5-21:19
+11-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:5:5-22:19
 12        android:allowBackup="true"
 12-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,26 +28,29 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.proyectopmdm.LoginActivity" >
-21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:9-18:20
-21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:19-48
-22            <intent-filter>
-22-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:14:17-69
-23-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:16:17-77
-25-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28        <activity android:name="com.example.proyectopmdm.MainActivity" />
-28-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:19:9-59
-28-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:19:19-47
-29        <activity android:name="com.example.proyectopmdm.ItemActivity" />
-29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:9-59
-29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:19-47
-30    </application>
-31
-32</manifest>
+21        <activity android:name="com.example.proyectopmdm.SelectActivity" />
+21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:9-61
+21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:19-49
+22        <activity android:name="com.example.proyectopmdm.LoginActivity" >
+22-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:9-19:20
+22-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:19-48
+23            <intent-filter>
+23-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:14:13-18:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:15:17-69
+24-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:15:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:17:17-77
+26-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:17:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.example.proyectopmdm.LibroActivity" />
+29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:9-51
+29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:19-48
+30        <activity android:name="com.example.proyectopmdm.ItemActivity" />
+30-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:9-50
+30-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:19-47
+31    </application>
+32
+33</manifest>

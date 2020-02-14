@@ -45,9 +45,9 @@ public class ItemActivity extends Activity {
         String importanceText = mImportance.getText().toString();
         //insertar
         try {
-            MainActivity.mDbHelper.open();
-            MainActivity.mDbHelper.insertItem(itemText, placeText, descriptionText, Integer.parseInt(importanceText));
-            MainActivity.mDbHelper.close();
+            LibroActivity.mDbHelper.open();
+            LibroActivity.mDbHelper.insertItem(itemText, placeText, descriptionText, Integer.parseInt(importanceText));
+            LibroActivity.mDbHelper.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

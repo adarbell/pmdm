@@ -1,7 +1,5 @@
 package com.example.proyectopmdm;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -9,21 +7,16 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends ListActivity {
+public class LibroActivity extends ListActivity {
     //acciones
     public static final int NEW_ITEM = 1;
     public static final int EDIT_ITEM = 2;
@@ -31,14 +24,14 @@ public class MainActivity extends ListActivity {
 
     //elemento seleccionado
     private int mLastRowSelected = 0;
-    public static DataBaseHelper mDbHelper = null;
+    public static LibroDBHelper mDbHelper = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_libro);
         // abrir la base de datos
-        mDbHelper = new DataBaseHelper(this);
+        mDbHelper = new LibroDBHelper(this);
         try {
             fillData();
         } catch (SQLException e) {
@@ -47,7 +40,7 @@ public class MainActivity extends ListActivity {
         Button botonIni=(Button)findViewById(R.id.BotonPrincipal);
         botonIni.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent (MainActivity.this,ItemActivity.class);
+                Intent intent = new Intent (LibroActivity.this,ItemActivity.class);
                 startActivityForResult(intent, NEW_ITEM);
             }
         });
@@ -63,17 +56,17 @@ public class MainActivity extends ListActivity {
         // se abre la base de datos y se obtienen los elementos
         mDbHelper.open();
         Cursor itemCursor = mDbHelper.getItems();
+        //Cursor itemCursor = mDbHelper.getItemsFrom(userId);
         Libro libro = null;
         ArrayList<Libro> resultList = new ArrayList<Libro>();
         // se procesa el resultado
         while (itemCursor.moveToNext()) {
-            int id = itemCursor.getInt(itemCursor.getColumnIndex(DataBaseHelper.SL_ID));
-            String titulo = itemCursor.getString(itemCursor.getColumnIndex(DataBaseHelper.SL_TITULO));
-            String autor = itemCursor.getString(itemCursor.getColumnIndex(DataBaseHelper.SL_AUTOR));
-            int paginas = itemCursor.getInt(itemCursor.getColumnIndex(DataBaseHelper.SL_PAGINAS));
-            int img = itemCursor.getInt(itemCursor.getColumnIndex(DataBaseHelper.SL_IMG));
+            int id = itemCursor.getInt(itemCursor.getColumnIndex(LibroDBHelper.SL_ID));
+            String titulo = itemCursor.getString(itemCursor.getColumnIndex(LibroDBHelper.SL_TITULO));
+            String autor = itemCursor.getString(itemCursor.getColumnIndex(LibroDBHelper.SL_AUTOR));
+            int userid = itemCursor.getInt(itemCursor.getColumnIndex(LibroDBHelper.SL_USERID));
 
-            libro = new Libro(id, titulo, autor, paginas, img);
+            libro = new Libro(id, titulo, autor, userid);
             resultList.add(libro);
         }
         //cerramos la base de datos

@@ -9,11 +9,10 @@ public class Libro  implements Serializable {
     private int img;
     private int user_id;
 
-    public Libro(int id, String titulo, String autor, int img, int user_id) {
+    public Libro(int id, String titulo, String autor, int user_id) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.img = img;
         this.user_id = user_id;
 
     }

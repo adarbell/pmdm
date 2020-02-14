@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/rubrod/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/rubrod/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/rubrod/.gradle/caches/transforms-2/files-2.1/d934be3c652b5ff5c18e2d68c8236453/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -25,25 +25,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rubrod/.gradle/cach
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/rubrod/.gradle/caches/transforms-2/files-2.1/df65787e67fe4b4bc0635deed9695797/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/rubrod/.gradle/caches/transforms-2/files-2.1/a1f5477cd6fd5fad9baa3e263bec7d60/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/rubrod/.gradle/caches/transforms-2/files-2.1/60b50828def4ba3859898ffb4c971c21/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
 		INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
-		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
-		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:5:5-22:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/rubrod/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/rubrod/.gradle/caches/transforms-2/files-2.1/508ac768b50158a079142e4dc4915061/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] /home/rubrod/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:5-89
@@ -64,28 +64,32 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/rubro
 		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.proyectopmdm.SelectActivity
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:9-61
+	android:name
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:19-49
 activity#com.example.proyectopmdm.LoginActivity
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:19-48
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:16:27-74
-activity#com.example.proyectopmdm.MainActivity
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:19:9-59
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:17:27-74
+activity#com.example.proyectopmdm.LibroActivity
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:9-51
 	android:name
-		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:19:19-47
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:19-48
 activity#com.example.proyectopmdm.ItemActivity
-ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:9-59
+ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:9-50
 	android:name
-		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:19-47
+		ADDED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:19-47
 uses-sdk
 INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml

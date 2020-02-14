@@ -26,6 +26,8 @@ public class LoginDBHelper {
                     SL_CONTRASEÑA + " text)";
 
     private static final String DATABASE_INSERT_PRUEBA = "insert into " + DATABASE_TABLE_USUARIOS + " VALUES (0, 'usuario', 'usuario')";
+    private static final String DATABASE_INSERT_PRUEBA2 = "insert into " + DATABASE_TABLE_USUARIOS + " VALUES (1, 'usuario2', 'usuario2')";
+
 
     //constructor
     public LoginDBHelper(Context ctx) {
@@ -49,6 +51,8 @@ public class LoginDBHelper {
         private void createTables(SQLiteDatabase db) {
             db.execSQL(DATABASE_CREATE_USUARIOS);
             db.execSQL(DATABASE_INSERT_PRUEBA);
+            db.execSQL(DATABASE_INSERT_PRUEBA2);
+
         }
 
         private void deleteTables(SQLiteDatabase db) {
@@ -70,6 +74,17 @@ public class LoginDBHelper {
         return mDb.query(DATABASE_TABLE_USUARIOS, new String[] {SL_ID, SL_USUARIO, SL_CONTRASEÑA}, null, null, null, null, SL_ID);
     }
 
+    public int getUserId(String usr) {
+        try {
+            Cursor c = mDb.rawQuery("SELECT * FROM " + DATABASE_TABLE_USUARIOS +
+                    " WHERE " + SL_USUARIO + " = '" + usr + "'", null);
+            c.moveToFirst();
+            return c.getInt(c.getColumnIndex(LoginDBHelper.SL_ID));
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
     //crear elemento
     public long insertItem(String item, String place, String description, int importance){
         ContentValues initialValues = new ContentValues();
@@ -80,7 +95,8 @@ public class LoginDBHelper {
 
     public boolean login(String user, String pwd) {
         try {
-            Cursor c = mDb.rawQuery("SELECT * FROM " + DATABASE_TABLE_USUARIOS + " WHERE " + SL_USUARIO + " = '" + user + "' AND " + SL_CONTRASEÑA + " = '" + pwd + "'", null);
+            Cursor c = mDb.rawQuery("SELECT * FROM " + DATABASE_TABLE_USUARIOS +
+                    " WHERE " + SL_USUARIO + " = '" + user + "' AND " + SL_CONTRASEÑA + " = '" + pwd + "'", null);
             if (c.getCount() > 0)
                 return true;
             else

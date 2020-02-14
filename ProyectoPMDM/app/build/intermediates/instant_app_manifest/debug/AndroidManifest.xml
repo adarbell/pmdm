@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.proyectopmdm.SelectActivity" />
         <activity android:name="com.example.proyectopmdm.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.proyectopmdm.MainActivity" />
+        <activity android:name="com.example.proyectopmdm.LibroActivity" />
         <activity android:name="com.example.proyectopmdm.ItemActivity" />
     </application>
 

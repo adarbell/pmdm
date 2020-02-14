@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-public class DataBaseHelper {
+public class LibroDBHelper {
     private Context mCtx = null;
     private DataBaseHelperInternal mDbHelper = null;
     private SQLiteDatabase mDb = null;
@@ -18,8 +18,7 @@ public class DataBaseHelper {
     public static final String SL_ID = "_id";
     public static final String SL_TITULO = "titulo";
     public static final String SL_AUTOR = "autor";
-    public static final String SL_PAGINAS = "paginas";
-    public static final String SL_IMG = "img";
+    public static final String SL_USERID = "user_id";
 
     // SQL de creación de la tabla
     private static final String DATABASE_CREATE_LIBROS =
@@ -27,10 +26,9 @@ public class DataBaseHelper {
                     SL_ID + " integer primary key, " +
                     SL_TITULO + " text not null, " +
                     SL_AUTOR + " text not null, " +
-                    SL_PAGINAS + " integer not null, " +
-                    SL_IMG + " integer)";
+                    SL_USERID + " text not null)";
     //constructor
-    public DataBaseHelper(Context ctx) {
+    public LibroDBHelper(Context ctx) {
         this.mCtx = ctx;
     }
     //clase privada para control de la SQLite
@@ -57,7 +55,7 @@ public class DataBaseHelper {
         }
     }
 
-    public DataBaseHelper open()  {
+    public LibroDBHelper open()  {
         mDbHelper = new DataBaseHelperInternal(mCtx);
         mDb = mDbHelper.getWritableDatabase();
         return this;
@@ -70,16 +68,20 @@ public class DataBaseHelper {
     //obtener todos los elementos
     public Cursor getItems() {
         //Parametros:nombreTabla,campos,campoWhere,condicionWhere,Group By, Havong, Order by
-        return mDb.query(DATABASE_TABLE_LIBROS, new String[] {SL_ID, SL_TITULO, SL_AUTOR, SL_PAGINAS, SL_IMG}, null, null, null, null, SL_ID);
+        return mDb.query(DATABASE_TABLE_LIBROS, new String[] {SL_ID, SL_TITULO, SL_AUTOR, SL_USERID}, null, null, null, null, SL_ID);
+    }
+
+    public Cursor getItemsFrom(int userid) {
+        //Parametros:nombreTabla,campos,campoWhere,condicionWhere,Group By, Havong, Order by
+        return mDb.query(DATABASE_TABLE_LIBROS, new String[] {SL_ID, SL_TITULO, SL_AUTOR, SL_USERID}, "user_id = " + userid, null, null, null, SL_ID);
     }
 
     //crear elemento
-    public long insertItem(String item, String place, String description, int importance){
+    public long insertItem(String item, String autor, String titulo, int userid){
         ContentValues initialValues = new ContentValues();
-        initialValues.put(SL_AUTOR, importance);
-        initialValues.put(SL_TITULO, item);
-        initialValues.put(SL_PAGINAS, place);
-        initialValues.put(SL_IMG, description);
+        initialValues.put(SL_AUTOR, autor);
+        initialValues.put(SL_TITULO, titulo);
+        initialValues.put(SL_USERID, userid);
         return mDb.insert(DATABASE_TABLE_LIBROS, null, initialValues);
     }
 }

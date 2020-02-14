@@ -2,10 +2,7 @@ package com.example.proyectopmdm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.Editable;
 import android.widget.Button;
@@ -25,8 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //Login
         btnLogin.setOnClickListener(v -> {
-            //Login simulado
-            Login(userEditText.getText(), pwdEditText.getText());
+                Login(userEditText.getText(), pwdEditText.getText());
         });
     }
 
@@ -34,7 +30,8 @@ public class LoginActivity extends AppCompatActivity {
         LoginDBHelper ldbHelper = new LoginDBHelper(this);
         ldbHelper.open();
         if (ldbHelper.login(user.toString(), pwd.toString())) {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, SelectActivity.class);
+            intent.putExtra("userid", ldbHelper.getUserId(user.toString()));
             startActivity(intent);
         } else {
             Toast toast = Toast.makeText(this, "No se pudo autentificar", Toast.LENGTH_SHORT);
