@@ -1,4 +1,4 @@
-package com.example.proyectopmdm;
+package com.example.proyectopmdm.DBHelpers;
 
 import android.content.ContentValues;
 import android.content.Context;

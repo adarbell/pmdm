@@ -11,7 +11,7 @@
 9-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:5:5-22:19
+11-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:5:5-26:19
 12        android:allowBackup="true"
 12-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,12 +28,12 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.proyectopmdm.SelectActivity" />
-21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:9-61
-21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:19-49
-22        <activity android:name="com.example.proyectopmdm.LoginActivity" >
+21        <activity android:name="com.example.proyectopmdm.Actividades.SelectActivity" />
+21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:9-73
+21-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:12:19-61
+22        <activity android:name="com.example.proyectopmdm.Actividades.LoginActivity" >
 22-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:9-19:20
-22-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:19-48
+22-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:13:19-60
 23            <intent-filter>
 23-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:14:13-18:29
 24                <action android:name="android.intent.action.MAIN" />
@@ -45,12 +45,24 @@
 26-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:17:27-74
 27            </intent-filter>
 28        </activity>
-29        <activity android:name="com.example.proyectopmdm.LibroActivity" />
-29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:9-51
-29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:19-48
-30        <activity android:name="com.example.proyectopmdm.ItemActivity" />
-30-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:9-50
-30-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:19-47
-31    </application>
-32
-33</manifest>
+29        <activity android:name="com.example.proyectopmdm.Actividades.LibroActivity" />
+29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:9-63
+29-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:20:19-60
+30        <activity android:name="com.example.proyectopmdm.Actividades.PeliculaActivity" />
+30-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:9-66
+30-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:21:19-63
+31        <activity android:name="com.example.proyectopmdm.Actividades.JuegoActivity" />
+31-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:22:9-63
+31-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:22:19-60
+32        <activity android:name="com.example.proyectopmdm.Creacion.ItemLibroActivity" />
+32-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:23:9-64
+32-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:23:19-61
+33        <activity android:name="com.example.proyectopmdm.Creacion.ItemJuegoActivity" />
+33-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:24:9-64
+33-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:24:19-61
+34        <activity android:name="com.example.proyectopmdm.Creacion.ItemPeliculaActivity" />
+34-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:25:9-67
+34-->/home/rubrod/Documentos/PMDM/pmdm/ProyectoPMDM/app/src/main/AndroidManifest.xml:25:19-64
+35    </application>
+36
+37</manifest>

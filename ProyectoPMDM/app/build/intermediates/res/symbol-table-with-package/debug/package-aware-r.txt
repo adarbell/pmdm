@@ -741,6 +741,7 @@ id add
 id alertTitle
 id always
 id async
+id autor
 id barrier
 id beginning
 id blocking
@@ -759,7 +760,6 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
-id description
 id dialog_button
 id dimensions
 id direct
@@ -783,11 +783,9 @@ id image
 id img_juego
 id img_libro
 id img_pelicula
-id importance
 id info
 id invisible
 id italic
-id item
 id left
 id line1
 id line3
@@ -808,7 +806,6 @@ id packed
 id parent
 id parentPanel
 id percent
-id place
 id progress_circular
 id progress_horizontal
 id pwdEditText
@@ -838,6 +835,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sinopsis
 id spacer
 id split_action_bar
 id spread
@@ -867,6 +865,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id titulo
 id top
 id topPanel
 id unchecked
@@ -917,8 +916,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_juego
 layout activity_libro
 layout activity_login
+layout activity_pelicula
 layout activity_select
 layout custom_dialog
 layout new_item

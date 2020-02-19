@@ -6,16 +6,17 @@ public class Libro  implements Serializable {
     private int id;
     private String titulo;
     private String autor;
-    private int img;
+    private String sinopsis;
     private int user_id;
 
-    public Libro(int id, String titulo, String autor, int user_id) {
+    public Libro(int id, String titulo, String autor, String sinopsis, int user_id) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
+        this.sinopsis = sinopsis;
         this.user_id = user_id;
-
     }
+
     public int getId() { return id; }
 
     public void setId() { this.id = id; }
@@ -36,12 +37,12 @@ public class Libro  implements Serializable {
         this.autor = autor;
     }
 
-    public int getImg() {
-        return img;
+    public String getSinopsis() {
+        return sinopsis;
     }
 
-    public void setImg(int img) {
-        this.img = img;
+    public void setSinopsis(String sinopsis) {
+        this.sinopsis = sinopsis;
     }
 
     public int getUserId() {
@@ -60,7 +61,7 @@ public class Libro  implements Serializable {
                 "id='" + id + '\'' +
                 ", titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
-                ", img='" + img + '\'' +
+                ", sinopsis='" + sinopsis + '\'' +
                 ", user_id=" + user_id +
                 '}';
     }

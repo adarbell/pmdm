@@ -1,4 +1,4 @@
-package com.example.proyectopmdm;
+package com.example.proyectopmdm.Actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.text.Editable;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.proyectopmdm.DBHelpers.LoginDBHelper;
+import com.example.proyectopmdm.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -30,8 +33,11 @@ public class LoginActivity extends AppCompatActivity {
         LoginDBHelper ldbHelper = new LoginDBHelper(this);
         ldbHelper.open();
         if (ldbHelper.login(user.toString(), pwd.toString())) {
+            Bundle bundle = new Bundle();
+            bundle.putInt("userid", ldbHelper.getUserId(user.toString()));
+
             Intent intent = new Intent(this, SelectActivity.class);
-            intent.putExtra("userid", ldbHelper.getUserId(user.toString()));
+            intent.putExtras(bundle);
             startActivity(intent);
         } else {
             Toast toast = Toast.makeText(this, "No se pudo autentificar", Toast.LENGTH_SHORT);

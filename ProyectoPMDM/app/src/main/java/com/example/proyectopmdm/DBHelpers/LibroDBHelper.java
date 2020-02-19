@@ -1,4 +1,4 @@
-package com.example.proyectopmdm;
+package com.example.proyectopmdm.DBHelpers;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -18,6 +18,7 @@ public class LibroDBHelper {
     public static final String SL_ID = "_id";
     public static final String SL_TITULO = "titulo";
     public static final String SL_AUTOR = "autor";
+    public static final String SL_SINOPSIS = "sinopsis";
     public static final String SL_USERID = "user_id";
 
     // SQL de creación de la tabla
@@ -26,6 +27,7 @@ public class LibroDBHelper {
                     SL_ID + " integer primary key, " +
                     SL_TITULO + " text not null, " +
                     SL_AUTOR + " text not null, " +
+                    SL_SINOPSIS + " text, " +
                     SL_USERID + " text not null)";
     //constructor
     public LibroDBHelper(Context ctx) {
@@ -68,19 +70,20 @@ public class LibroDBHelper {
     //obtener todos los elementos
     public Cursor getItems() {
         //Parametros:nombreTabla,campos,campoWhere,condicionWhere,Group By, Havong, Order by
-        return mDb.query(DATABASE_TABLE_LIBROS, new String[] {SL_ID, SL_TITULO, SL_AUTOR, SL_USERID}, null, null, null, null, SL_ID);
+        return mDb.query(DATABASE_TABLE_LIBROS, new String[] {SL_ID, SL_TITULO, SL_AUTOR, SL_SINOPSIS, SL_USERID}, null, null, null, null, SL_ID);
     }
 
     public Cursor getItemsFrom(int userid) {
         //Parametros:nombreTabla,campos,campoWhere,condicionWhere,Group By, Havong, Order by
-        return mDb.query(DATABASE_TABLE_LIBROS, new String[] {SL_ID, SL_TITULO, SL_AUTOR, SL_USERID}, "user_id = " + userid, null, null, null, SL_ID);
+        return mDb.query(DATABASE_TABLE_LIBROS, new String[] {SL_ID, SL_TITULO, SL_AUTOR, SL_SINOPSIS, SL_USERID}, "user_id = " + userid, null, null, null, SL_ID);
     }
 
     //crear elemento
-    public long insertItem(String item, String autor, String titulo, int userid){
+    public long insertItem(String titulo, String autor, String sinopsis, String userid){
         ContentValues initialValues = new ContentValues();
-        initialValues.put(SL_AUTOR, autor);
         initialValues.put(SL_TITULO, titulo);
+        initialValues.put(SL_AUTOR, autor);
+        initialValues.put(SL_SINOPSIS, sinopsis);
         initialValues.put(SL_USERID, userid);
         return mDb.insert(DATABASE_TABLE_LIBROS, null, initialValues);
     }

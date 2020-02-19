@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Juegos"
+        android:textColor="#673AB7"
+        android:textSize="22dp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/BotonPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir elementos" />
+
+    <ListView android:id="@android:id/list"
+        android:layout_width="fill_parent" android:layout_height="fill_parent" ></ListView>
+
+</LinearLayout>

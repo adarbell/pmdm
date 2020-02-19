@@ -19,16 +19,20 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.proyectopmdm.SelectActivity" />
-        <activity android:name="com.example.proyectopmdm.LoginActivity" >
+        <activity android:name="com.example.proyectopmdm.Actividades.SelectActivity" />
+        <activity android:name="com.example.proyectopmdm.Actividades.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.proyectopmdm.LibroActivity" />
-        <activity android:name="com.example.proyectopmdm.ItemActivity" />
+        <activity android:name="com.example.proyectopmdm.Actividades.LibroActivity" />
+        <activity android:name="com.example.proyectopmdm.Actividades.PeliculaActivity" />
+        <activity android:name="com.example.proyectopmdm.Actividades.JuegoActivity" />
+        <activity android:name="com.example.proyectopmdm.Creacion.ItemLibroActivity" />
+        <activity android:name="com.example.proyectopmdm.Creacion.ItemJuegoActivity" />
+        <activity android:name="com.example.proyectopmdm.Creacion.ItemPeliculaActivity" />
     </application>
 
 </manifest>

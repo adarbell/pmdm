@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="save" />
+        android:text="Guardar" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -36,33 +36,25 @@
 
 
         <EditText
-            android:id="@+id/item"
+            android:id="@+id/titulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="element" />
+            android:hint="Título" />
 
 
         <EditText
-            android:id="@+id/place"
+            android:id="@+id/autor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="place" />
+            android:hint="Autor" />
 
 
         <EditText
-            android:id="@+id/importance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="importance"
-            android:inputType="number" />
-
-
-        <EditText
-            android:id="@+id/description"
+            android:id="@+id/sinopsis"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="top"
             android:background="@android:drawable/editbox_background_normal"
-            android:hint="description" />
+            android:gravity="top"
+            android:hint="Sinopsis" />
     </LinearLayout>
 </RelativeLayout>

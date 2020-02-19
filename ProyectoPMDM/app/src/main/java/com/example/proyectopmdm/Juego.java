@@ -2,21 +2,21 @@ package com.example.proyectopmdm;
 
 import java.io.Serializable;
 
-public class Juegos implements Serializable {
+public class Juego  implements Serializable {
     private int id;
     private String titulo;
     private String autor;
-    private int img;
+    private String sinopsis;
     private int user_id;
 
-    public Juegos(int id, String titulo, String autor, int img, int user_id) {
+    public Juego(int id, String titulo, String autor, String sinopsis, int user_id) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.img = img;
+        this.sinopsis = sinopsis;
         this.user_id = user_id;
-
     }
+
     public int getId() { return id; }
 
     public void setId() { this.id = id; }
@@ -37,12 +37,12 @@ public class Juegos implements Serializable {
         this.autor = autor;
     }
 
-    public int getImg() {
-        return img;
+    public String getSinopsis() {
+        return sinopsis;
     }
 
-    public void setImg(int img) {
-        this.img = img;
+    public void setSinopsis(String sinopsis) {
+        this.sinopsis = sinopsis;
     }
 
     public int getUserId() {
@@ -57,11 +57,11 @@ public class Juegos implements Serializable {
 
     @Override
     public String toString() {
-        return "Juegos{" +
+        return "Juego{" +
                 "id='" + id + '\'' +
                 ", titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
-                ", img='" + img + '\'' +
+                ", sinopsis='" + sinopsis + '\'' +
                 ", user_id=" + user_id +
                 '}';
     }
